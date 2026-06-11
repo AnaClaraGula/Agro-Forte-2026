@@ -170,3 +170,26 @@ footer{
   }
 
 }
+#opcoes button{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#opcoes button:hover{
+    background-color: #1b5e20;
+}
+
+#resultado{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e7d32;
+}
