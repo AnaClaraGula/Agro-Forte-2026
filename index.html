@@ -1,106 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Sustentável</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>🌱 Agro Forte, Futuro Sustentável</h1>
-        <p>Equilíbrio entre produção e meio ambiente</p>
-    </header>
+  <header>
+    <div class="conteudo-header">
+      <h1>Agro Sustentável</h1>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#tecnologia">Tecnologia</a>
-        <a href="#sustentabilidade">Sustentabilidade</a>
-        <a href="#quiz">Quiz</a>
-    </nav>
+      <p>
+        Tecnologia e preservação ambiental trabalhando juntas
+        para um futuro melhor no campo.
+      </p>
+    </div>
+  </header>
 
-    <section id="sobre">
-        <h2>O Agro Forte</h2>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#tecnologia">Tecnologias</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre">
+    <h2>O que é Agro Sustentável?</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🌱 Produção Consciente</h3>
+
         <p>
-            O agronegócio é um dos principais motores da economia brasileira.
-            Com tecnologia, inovação e responsabilidade ambiental, é possível
-            produzir alimentos para o mundo preservando os recursos naturais.
+          Produzir alimentos preservando o meio ambiente e utilizando os recursos naturais com responsabilidade.
         </p>
-    </section>
+      </div>
 
-    <section id="tecnologia">
-        <h2>Tecnologia no Campo</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>🚜 Máquinas Inteligentes</h3>
-                <p>Tratores modernos aumentam a produtividade e reduzem desperdícios.</p>
-            </div>
+      <div class="card">
+        <h3>💧 Economia de Água</h3>
 
-            <div class="card">
-                <h3>🛰️ Agricultura de Precisão</h3>
-                <p>Uso de drones e satélites para monitorar lavouras.</p>
-            </div>
+        <p>
+          Sistemas modernos ajudam a evitar desperdícios durante a irrigação.
+        </p>
+      </div>
 
-            <div class="card">
-                <h3>💧 Irrigação Eficiente</h3>
-                <p>Economiza água e melhora o desenvolvimento das plantas.</p>
-            </div>
-        </div>
-    </section>
+      <div class="card">
+        <h3>🚜 Tecnologia no Campo</h3>
 
-    <section id="sustentabilidade">
-        <h2>Sustentabilidade no Agro</h2>
+        <p>
+          Drones, sensores e monitoramento digital aumentam a eficiência agrícola.
+        </p>
+      </div>
 
-        <ul>
-            <li>🌳 Preservação de matas ciliares</li>
-            <li>♻️ Reutilização de resíduos orgânicos</li>
-            <li>💧 Uso consciente da água</li>
-            <li>🌱 Rotação de culturas</li>
-            <li>☀️ Uso de energia renovável</li>
-        </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="quiz">
-        <h2>Quiz Agro Sustentável</h2>
+  <section id="tecnologia" class="fundo-verde">
+    <h2>Tecnologias Sustentáveis</h2>
 
-        <div class="pergunta">
-            <p>1. O que é agricultura de precisão?</p>
-            <button onclick="responder(this,true)">Uso de tecnologia para monitorar a produção</button>
-            <button onclick="responder(this,false)">Plantio sem planejamento</button>
-        </div>
+    <div class="cards">
 
-        <div class="pergunta">
-            <p>2. Qual prática ajuda a preservar o solo?</p>
-            <button onclick="responder(this,true)">Rotação de culturas</button>
-            <button onclick="responder(this,false)">Desmatamento</button>
-        </div>
+      <div class="card">
+        <h3>☀ Energia Solar</h3>
 
-        <div class="pergunta">
-            <p>3. Qual recurso deve ser usado de forma consciente?</p>
-            <button onclick="responder(this,true)">Água</button>
-            <button onclick="responder(this,false)">Poluição</button>
-        </div>
+        <p>
+          Energia limpa utilizada em fazendas e sistemas de irrigação.
+        </p>
+      </div>
 
-        <div class="pergunta">
-            <p>4. O uso de drones no campo serve para:</p>
-            <button onclick="responder(this,true)">Monitorar lavouras</button>
-            <button onclick="responder(this,false)">Aumentar queimadas</button>
-        </div>
+      <div class="card">
+        <h3>🌾 Rotação de Culturas</h3>
 
-        <div class="pergunta">
-            <p>5. O agro sustentável busca:</p>
-            <button onclick="responder(this,true)">Produzir e preservar</button>
-            <button onclick="responder(this,false)">Produzir sem cuidar do ambiente</button>
-        </div>
+        <p>
+          Técnica que melhora a fertilidade do solo e reduz pragas.
+        </p>
+      </div>
 
-        <h3>Pontuação: <span id="pontuacao">0</span></h3>
-    </section>
+      <div class="card">
+        <h3>📡 Agricultura de Precisão</h3>
 
-    <footer>
-        <p>Projeto Agrinho 2026 - Agro Forte, Futuro Sustentável</p>
-    </footer>
+        <p>
+          Uso de dados e sensores para aumentar a produtividade.
+        </p>
+      </div>
 
-    <script src="script.js"></script>
+    </div>
+  </section>
+
+  <section id="beneficios">
+    <h2>Benefícios</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🌍 Preservação Ambiental</h3>
+
+        <p>
+          Redução da poluição e conservação dos ecossistemas.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📈 Maior Produtividade</h3>
+
+        <p>
+          Melhor aproveitamento dos recursos naturais.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>👨‍🌾 Valorização do Produtor</h3>
+
+        <p>
+          Incentivo ao desenvolvimento sustentável no campo.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="quiz">
+    <h2>Quiz Sustentável</h2>
+
+    <div class="quiz-box">
+
+      <h3>
+        Qual prática ajuda na preservação do solo?
+      </h3>
+
+      <button onclick="verificarResposta('errado')">
+        Queimadas frequentes
+      </button>
+
+      <button onclick="verificarResposta('certo')">
+        Rotação de culturas
+      </button>
+
+      <button onclick="verificarResposta('errado')">
+        Desmatamento excessivo
+      </button>
+
+      <p id="resultado"></p>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 - Projeto Agro Sustentável
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
