@@ -1,172 +1,94 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-  background-color: #f4fff4;
-  color: #222;
+    background:#f4fdf4;
+    color:#333;
 }
 
 header{
-  height: 100vh;
-  background-image:
-  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop");
-
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-.conteudo-header h1{
-  font-size: 60px;
-  margin-bottom: 20px;
-}
-
-.conteudo-header p{
-  font-size: 22px;
-  max-width: 700px;
+    background:linear-gradient(to right,#2e7d32,#66bb6a);
+    color:white;
+    text-align:center;
+    padding:40px;
 }
 
 nav{
-  background-color: #2e7d32;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-}
-
-nav ul{
-  list-style: none;
-
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+    background:#1b5e20;
+    text-align:center;
+    padding:15px;
 }
 
 nav a{
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
 }
 
 nav a:hover{
-  color: #c8ffcb;
+    color:#c8e6c9;
 }
 
 section{
-  padding: 70px 10%;
+    padding:40px;
 }
 
-section h2{
-  text-align: center;
-  margin-bottom: 40px;
-  color: #2e7d32;
-  font-size: 38px;
+h2{
+    color:#2e7d32;
+    margin-bottom:20px;
 }
 
 .cards{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 25px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .card{
-  background: white;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
-  transition: 0.3s;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    flex:1;
+    min-width:250px;
 }
 
-.card:hover{
-  transform: translateY(-8px);
+ul li{
+    margin:10px 0;
+    font-size:18px;
 }
 
-.card h3{
-  color: #2e7d32;
-  margin-bottom: 15px;
+.pergunta{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
 }
 
-.fundo-verde{
-  background-color: #e8f5e9;
+button{
+    display:block;
+    margin:10px 0;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background:#43a047;
+    color:white;
+    cursor:pointer;
 }
 
-.quiz-box{
-  background: white;
-  max-width: 700px;
-
-  margin: auto;
-  padding: 30px;
-
-  border-radius: 20px;
-  text-align: center;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.quiz-box h3{
-  margin-bottom: 20px;
-}
-
-.quiz-box button{
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-
-  border: none;
-  border-radius: 10px;
-
-  background-color: #2e7d32;
-  color: white;
-
-  font-size: 16px;
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-.quiz-box button:hover{
-  background-color: #1b5e20;
-}
-
-#resultado{
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
+button:hover{
+    background:#2e7d32;
 }
 
 footer{
-  background-color: #1b5e20;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-@media(max-width: 768px){
-
-  .conteudo-header h1{
-    font-size: 40px;
-  }
-
-  .conteudo-header p{
-    font-size: 18px;
-  }
-
-  nav ul{
-    flex-direction: column;
-    align-items: center;
-  }
-
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
 }

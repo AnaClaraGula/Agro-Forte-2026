@@ -1,317 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agro Sustentável</title>
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body{
-      background:#f4fff4;
-      color:#1d1d1d;
-    }
-
-    header{
-      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-      url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop');
-      background-size:cover;
-      background-position:center;
-      height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      color:white;
-      padding:20px;
-    }
-
-    header h1{
-      font-size:4rem;
-      margin-bottom:20px;
-    }
-
-    header p{
-      font-size:1.3rem;
-      max-width:700px;
-      margin:auto;
-    }
-
-    nav{
-      background:#2e7d32;
-      padding:15px;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-
-    nav ul{
-      display:flex;
-      justify-content:center;
-      list-style:none;
-      gap:30px;
-      flex-wrap:wrap;
-    }
-
-    nav a{
-      color:white;
-      text-decoration:none;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    nav a:hover{
-      color:#c8ffcb;
-    }
-
-    section{
-      padding:70px 10%;
-    }
-
-    .titulo{
-      text-align:center;
-      margin-bottom:40px;
-      color:#2e7d32;
-      font-size:2.2rem;
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-      gap:25px;
-    }
-
-    .card{
-      background:white;
-      padding:25px;
-      border-radius:15px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-8px);
-    }
-
-    .card h3{
-      color:#2e7d32;
-      margin-bottom:15px;
-    }
-
-    .beneficios{
-      background:#e8f5e9;
-    }
-
-    .quiz{
-      background:white;
-      max-width:700px;
-      margin:auto;
-      padding:30px;
-      border-radius:20px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
-      text-align:center;
-    }
-
-    .quiz h3{
-      margin-bottom:20px;
-      color:#2e7d32;
-    }
-
-    .quiz button{
-      display:block;
-      width:100%;
-      margin:10px 0;
-      padding:15px;
-      border:none;
-      border-radius:10px;
-      background:#2e7d32;
-      color:white;
-      font-size:1rem;
-      cursor:pointer;
-      transition:0.3s;
-    }
-
-    .quiz button:hover{
-      background:#1b5e20;
-    }
-
-    #resultado{
-      margin-top:20px;
-      font-size:1.2rem;
-      font-weight:bold;
-      color:#1b5e20;
-    }
-
-    footer{
-      background:#1b5e20;
-      color:white;
-      text-align:center;
-      padding:25px;
-      margin-top:40px;
-    }
-
-    @media(max-width:768px){
-      header h1{
-        font-size:2.5rem;
-      }
-
-      header p{
-        font-size:1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <div>
-      <h1>Agro Sustentável</h1>
-      <p>
-        Tecnologia, preservação ambiental e produção eficiente caminhando juntas
-        para um futuro mais verde no campo.
-      </p>
-    </div>
-  </header>
+    <header>
+        <h1>🌱 Agro Forte, Futuro Sustentável</h1>
+        <p>Equilíbrio entre produção e meio ambiente</p>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#tecnologias">Tecnologias</a></li>
-      <li><a href="#beneficios">Benefícios</a></li>
-      <li><a href="#quiz">Quiz</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
 
-  <section id="sobre">
-    <h2 class="titulo">O que é Agro Sustentável?</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>🌱 Produção Consciente</h3>
+    <section id="sobre">
+        <h2>O Agro Forte</h2>
         <p>
-          O agro sustentável busca produzir alimentos de forma eficiente,
-          reduzindo impactos ambientais e preservando os recursos naturais.
+            O agronegócio é um dos principais motores da economia brasileira.
+            Com tecnologia, inovação e responsabilidade ambiental, é possível
+            produzir alimentos para o mundo preservando os recursos naturais.
         </p>
-      </div>
+    </section>
 
-      <div class="card">
-        <h3>💧 Uso Inteligente da Água</h3>
-        <p>
-          Técnicas modernas ajudam a economizar água e evitar desperdícios
-          durante a irrigação.
-        </p>
-      </div>
+    <section id="tecnologia">
+        <h2>Tecnologia no Campo</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🚜 Máquinas Inteligentes</h3>
+                <p>Tratores modernos aumentam a produtividade e reduzem desperdícios.</p>
+            </div>
 
-      <div class="card">
-        <h3>🚜 Tecnologia no Campo</h3>
-        <p>
-          Sensores, drones e monitoramento digital tornam a agricultura mais
-          eficiente e sustentável.
-        </p>
-      </div>
-    </div>
-  </section>
+            <div class="card">
+                <h3>🛰️ Agricultura de Precisão</h3>
+                <p>Uso de drones e satélites para monitorar lavouras.</p>
+            </div>
 
-  <section id="tecnologias" class="beneficios">
-    <h2 class="titulo">Tecnologias Sustentáveis</h2>
+            <div class="card">
+                <h3>💧 Irrigação Eficiente</h3>
+                <p>Economiza água e melhora o desenvolvimento das plantas.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>🌾 Rotação de Culturas</h3>
-        <p>
-          Mantém o solo fértil e reduz pragas naturalmente.
-        </p>
-      </div>
+    <section id="sustentabilidade">
+        <h2>Sustentabilidade no Agro</h2>
 
-      <div class="card">
-        <h3>☀ Energia Solar</h3>
-        <p>
-          Utilização de energia limpa para reduzir custos e impactos ambientais.
-        </p>
-      </div>
+        <ul>
+            <li>🌳 Preservação de matas ciliares</li>
+            <li>♻️ Reutilização de resíduos orgânicos</li>
+            <li>💧 Uso consciente da água</li>
+            <li>🌱 Rotação de culturas</li>
+            <li>☀️ Uso de energia renovável</li>
+        </ul>
+    </section>
 
-      <div class="card">
-        <h3>📡 Agricultura de Precisão</h3>
-        <p>
-          Uso de dados e sensores para melhorar a produtividade.
-        </p>
-      </div>
-    </div>
-  </section>
+    <section id="quiz">
+        <h2>Quiz Agro Sustentável</h2>
 
-  <section id="beneficios">
-    <h2 class="titulo">Benefícios do Agro Sustentável</h2>
+        <div class="pergunta">
+            <p>1. O que é agricultura de precisão?</p>
+            <button onclick="responder(this,true)">Uso de tecnologia para monitorar a produção</button>
+            <button onclick="responder(this,false)">Plantio sem planejamento</button>
+        </div>
 
-    <div class="cards">
-      <div class="card">
-        <h3>🌍 Preservação Ambiental</h3>
-        <p>
-          Redução da poluição e conservação dos ecossistemas.
-        </p>
-      </div>
+        <div class="pergunta">
+            <p>2. Qual prática ajuda a preservar o solo?</p>
+            <button onclick="responder(this,true)">Rotação de culturas</button>
+            <button onclick="responder(this,false)">Desmatamento</button>
+        </div>
 
-      <div class="card">
-        <h3>📈 Maior Produtividade</h3>
-        <p>
-          Produção mais eficiente utilizando menos recursos.
-        </p>
-      </div>
+        <div class="pergunta">
+            <p>3. Qual recurso deve ser usado de forma consciente?</p>
+            <button onclick="responder(this,true)">Água</button>
+            <button onclick="responder(this,false)">Poluição</button>
+        </div>
 
-      <div class="card">
-        <h3>👨‍🌾 Valorização do Produtor</h3>
-        <p>
-          Incentiva práticas responsáveis e melhora a qualidade de vida no campo.
-        </p>
-      </div>
-    </div>
-  </section>
+        <div class="pergunta">
+            <p>4. O uso de drones no campo serve para:</p>
+            <button onclick="responder(this,true)">Monitorar lavouras</button>
+            <button onclick="responder(this,false)">Aumentar queimadas</button>
+        </div>
 
-  <section id="quiz">
-    <h2 class="titulo">Quiz Sustentável</h2>
+        <div class="pergunta">
+            <p>5. O agro sustentável busca:</p>
+            <button onclick="responder(this,true)">Produzir e preservar</button>
+            <button onclick="responder(this,false)">Produzir sem cuidar do ambiente</button>
+        </div>
 
-    <div class="quiz">
-      <h3>Qual prática ajuda na preservação do solo?</h3>
+        <h3>Pontuação: <span id="pontuacao">0</span></h3>
+    </section>
 
-      <button onclick="resposta('errado')">
-        Queimadas frequentes
-      </button>
+    <footer>
+        <p>Projeto Agrinho 2026 - Agro Forte, Futuro Sustentável</p>
+    </footer>
 
-      <button onclick="resposta('certo')">
-        Rotação de culturas
-      </button>
-
-      <button onclick="resposta('errado')">
-        Desmatamento excessivo
-      </button>
-
-      <div id="resultado"></div>
-    </div>
-  </section>
-
-  <footer>
-    <p>
-      © 2026 - Projeto Agro Sustentável | Desenvolvido com HTML, CSS e JavaScript
-    </p>
-  </footer>
-
-  <script>
-    function resposta(opcao){
-      const resultado = document.getElementById("resultado");
-
-      if(opcao === "certo"){
-        resultado.innerHTML = "✅ Correto! A rotação de culturas ajuda a preservar o solo.";
-      }else{
-        resultado.innerHTML = "❌ Resposta incorreta. Tente novamente!";
-      }
-    }
-  </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
