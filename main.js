@@ -140,3 +140,18 @@ function verificarResposta(indiceSelecionado) {
 }
 
 carregarPergunta();
+// Botão de acessibilidade
+const botaoAcessibilidade =
+document.getElementById("acessibilidade-btn");
+
+botaoAcessibilidade.addEventListener("click", () => {
+
+    document.body.classList.toggle("fonte-grande");
+
+    if(document.body.classList.contains("fonte-grande")){
+        botaoAcessibilidade.innerHTML = "🔎 Fonte Normal";
+    } else {
+        botaoAcessibilidade.innerHTML = "🔍 Acessibilidade";
+    }
+
+});

@@ -193,3 +193,28 @@ footer{
     font-weight: bold;
     color: #2e7d32;
 }
+/* Botão de acessibilidade */
+#acessibilidade-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#acessibilidade-btn:hover{
+    background-color: #1b5e20;
+}
+
+/* Classe para aumentar a fonte */
+.fonte-grande{
+    font-size: 120%;
+}
